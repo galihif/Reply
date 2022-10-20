@@ -19,6 +19,7 @@ package com.example.reply
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.windowsizeclass.ExperimentalMaterial3WindowSizeClassApi
 import androidx.compose.material3.windowsizeclass.WindowWidthSizeClass
 import androidx.compose.material3.windowsizeclass.calculateWindowSizeClass
@@ -30,6 +31,7 @@ import com.example.reply.ui.theme.ReplyTheme
 /**
  * Activity for Reply app
  */
+@ExperimentalMaterial3Api
 @ExperimentalMaterial3WindowSizeClassApi
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -46,6 +48,7 @@ class MainActivity : ComponentActivity() {
     }
 }
 
+@ExperimentalMaterial3Api
 @Preview(showBackground = true)
 @Composable
 fun ReplyAppPreview() {
